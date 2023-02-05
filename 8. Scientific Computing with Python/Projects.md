@@ -14,8 +14,8 @@
 
 4. Polygon Area Calculator
 
-  	/polygon_area_calculator.py
+	/polygon_area_calculator.py
    
 5. Probability Calculator
 
-  	/probability_calculator.py
+	/probability_calculator.py
