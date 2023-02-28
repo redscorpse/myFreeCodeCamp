@@ -1,18 +1,27 @@
 body {
 	text-align: center;
+	background-color: #1B1B30;
+	color: rgb(245,246,247);
 }
 
 #learn-curriculum-map li {
 	background-color: rgb(59,59,79);
 	color: rgb(245,246,247);
+	border: 3px solid rgb(225,226,227);
+	border-radius: 6px;
 	padding: 10px;
 	margin: 10px auto;
-	vertical-align: middle;
+	list-style: none;
+}
+
+#learn-curriculum-map li div {
 	display: flex; justify-content: space-between; align-items: center; row-gap: 15px; column-gap: 15px;
+	text-align: right;
+
 }
 
 #learn-curriculum-map {
-	margin: 0;
+	margin: 15px;
 	padding: 0;
 }
 #learn-curriculum-map li a {
