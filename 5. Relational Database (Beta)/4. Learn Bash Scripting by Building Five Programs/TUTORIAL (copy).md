@@ -802,9 +802,9 @@ Run the script and use `5` as a first argument again.
 - Type `./countdown.sh 5` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 554. [[ 4 -le 5 ]]
+## 67. [[ 4 -le 5 ]]
 
-### 554.1
+### 67.1
 
 Now it prints `true`. Remember I said any command can run in the terminal or a script. Try running an expression right in the terminal by entering `[[ 4 -le 5 ]]` in it.
 
@@ -814,9 +814,9 @@ Now it prints `true`. Remember I said any command can run in the terminal or a s
 - Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-le`)
 - Type `[[ 4 -le 5 ]]` in the terminal and press enter
 
-## 556. echo $?
+## 68. echo $?
 
-### 556.1
+### 68.1
 
 Nothing happened? Each command has an exit status that can be accessed with `$?`. View the exit status of the **last command** with `echo $?`.
 
@@ -825,9 +825,9 @@ Nothing happened? Each command has an exit status that can be accessed with `$?`
 - Type `echo $?` in the terminal and press enter
 - Your second to last command should be `[[ 4 -le 5 ]]`. So enter that before `echo $?`
 
-## 558. [[ 4 -ge 5 ]]
+## 69. [[ 4 -ge 5 ]]
 
-### 558.1
+### 69.1
 
 The exit status of `0` means it was true, `4` is indeed less or equal to `5`. Try it again with `[[ 4 -ge 5 ]]`.
 
@@ -837,9 +837,9 @@ The exit status of `0` means it was true, `4` is indeed less or equal to `5`. Tr
 - Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-ge`)
 - Type `[[ 4 -ge 5 ]]` in the terminal and press enter
 
-## 56. echo $?
+## 70. echo $?
 
-### 56.1
+### 70.1
 
 Use `echo` to view the exit status of the command you just entered.
 
@@ -848,9 +848,9 @@ Use `echo` to view the exit status of the command you just entered.
 - Type `echo $?` in the terminal and press enter
 - Your second to last command should be `[[ 4 -ge 5 ]]`. So enter that right before `echo $?`
 
-## 562. [[ 4 -ge 5 ]]; echo $?
+## 71. [[ 4 -ge 5 ]]; echo $?
 
-### 562.1
+### 71.1
 
 It printed `1` this time for false. You can separate commands on a single line with `;`. Enter your last two commands on one line like this: `[[ 4 -ge 5 ]]; echo $?`. It will run the expression, then print the exit status of it since it was the last command.
 
@@ -859,9 +859,9 @@ It printed `1` this time for false. You can separate commands on a single line w
 - Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-ge`)
 - Type `[[ 4 -ge 5 ]]; echo $?` in the terminal and press enter
 
-## 564. [[ 10 -ne 5 ]]; echo $?
+## 72. [[ 10 -ne 5 ]]; echo $?
 
-### 564.1
+### 72.1
 
 It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
 
@@ -873,9 +873,9 @@ It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is
 - Make sure there's spaces inside the brackets and around the operator
 - Type `[[ 10 -ne 5 ]]; echo $?` in the terminal and press enter
 
-## 566. bad_command; echo $?
+## 73. bad_command; echo $?
 
-### 566.1
+### 73.1
 
 You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same syntax, enter `bad_command;` and check its exit status on a single line.
 
@@ -885,9 +885,9 @@ You can think of an exit status of `0` as true. But it means that the command ha
 - You previously used `[[ 10 -ne 5 ]]; echo $?`
 - Type `bad_command; echo $?` in the terminal and press enter
 
-## 568. ls; echo $?
+## 74. ls; echo $?
 
-### 568.1
+### 74.1
 
 `command not found`, with an exit status of `127`. Anything but `0` means there was an error with the command. `bad_command` didn't exist. Try it again with `ls`.
 
@@ -898,9 +898,9 @@ You can think of an exit status of `0` as true. But it means that the command ha
 - You previously used `bad_command; echo $?`
 - Type `ls; echo $?` in the terminal and press enter
 
-## 57. ls -y; echo $?
+## 75. ls -y; echo $?
 
-### 57.1
+### 75.1
 
 The command executed as expected and there were zero errors. So it gave you an exit status of `0`. Try it again with `ls -y`.
 
@@ -911,9 +911,9 @@ The command executed as expected and there were zero errors. So it gave you an e
 - You previously used `ls; echo $?`
 - Type `ls -y; echo $?` in the terminal and press enter
 
-## 572. help test
+## 76. help test
 
-### 572.1
+### 76.1
 
 The `-y` flag doesn't work with `ls` so it gave you an exit status other than `0`, meaning that the command was unsuccessful. View the `help` menu of the `test` command again, I want to see what else is in that list.
 
@@ -922,9 +922,9 @@ The `-y` flag doesn't work with `ls` so it gave you an exit status other than `0
 - Here's an example: `help <command>`
 - Type `help test` in the terminal and press enter
 
-## 574. [[ -a countdown.sh ]]; echo $?
+## 77. [[ -a countdown.sh ]]; echo $?
 
-### 574.1
+### 77.1
 
 You tried a few of the arithmetic operators, those work for integers. Try one of the file operators. The first one on the list checks if a file exists. Type `[[ -a countdown.sh ]]; echo $?` in the terminal to see if your file exists.
 
@@ -935,9 +935,9 @@ You tried a few of the arithmetic operators, those work for integers. Try one of
 - Don't forget the spaces inside the brackets
 - Make sure you are in the `project` folder first
 
-## 575. [[ -a bad_file.txt ]]; echo $?
+## 78. [[ -a bad_file.txt ]]; echo $?
 
-### 575.1
+### 78.1
 
 The file must exist. It's checking the folder the command is entered from. Try it again with `bad_file.txt`.
 
@@ -949,9 +949,9 @@ The file must exist. It's checking the folder the command is entered from. Try i
 - Type `[[ -a bad_file.txt ]]; echo $?` in the terminal and press enter
 - Don't forget the spaces inside the brackets
 
-## 576. [[ -x countdown.sh ]]; echo $?
+## 79. [[ -x countdown.sh ]]; echo $?
 
-### 576.1
+### 79.1
 
 `bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your `countdown.sh` file. You may want to look at that menu again.
 
@@ -964,9 +964,9 @@ The file must exist. It's checking the folder the command is entered from. Try i
 - Type `[[ -x countdown.sh ]]; echo $?` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 582. help [[ expression ]]
+## 80. help [[ expression ]]
 
-### 582.1
+### 80.1
 
 You played around with a number of the expressions. View the `help [[ expression ]]` menu again that you looked at before to see a few more options. You can view the menu with just `help [[`.
 
@@ -975,9 +975,9 @@ You played around with a number of the expressions. View the `help [[ expression
 - Enter the suggested command in the terminal
 - Type `help [[ expression ]]` or `help [[` in the terminal and press enter
 
-## 584. [[ -x countdown.sh && 5 -le 4 ]]; echo $?
+## 81. [[ -x countdown.sh && 5 -le 4 ]]; echo $?
 
-### 584.1
+### 81.1
 
 As I mentioned before, you can test multiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.
 
@@ -987,9 +987,9 @@ As I mentioned before, you can test multiple expressions with `&&` and `||`. Ent
 - Type `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
 
-## 586. [[ -x countdown.sh || 5 -le 4 ]]; echo $?
+## 82. [[ -x countdown.sh || 5 -le 4 ]]; echo $?
 
-### 586.1
+### 82.1
 
 Both conditions weren't true, so the exit status was `1` for `false`. Try testing the same two conditions with the `or` operator.
 
@@ -1001,9 +1001,9 @@ Both conditions weren't true, so the exit status was `1` for `false`. Try testin
 - Type `[[ -x countdown.sh || 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
 
-## 588. Change if to [[ $1 -gt 0 ]]
+## 83. Change if to [[ $1 -gt 0 ]]
 
-### 588.1
+### 83.1
 
 One of the conditions was true so it printed `0`. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is **greater than zero** so you can be sure it's something you can count down from.
 
@@ -1013,9 +1013,9 @@ One of the conditions was true so it printed `0`. I think that's enough of a det
 - The `if` condition should look like this: `[[ $1 -gt 0 ]]`
 - It's in the `countdown.sh` file
 
-## 59. Change if !# message
+## 84. Change if !# message
 
-### 59.1
+### 84.1
 
 The condition you added checks if a positive integer was passed as an argument to the script and executes the `then` area. Change the existing `echo` command to print `Include a positive integer as the first argument.` if a positive integer is not used.
 
@@ -1032,9 +1032,9 @@ else
 fi
 ```
 
-## 60. ./countdown 1
+## 85. ./countdown 1
 
-### 60.1
+### 85.1
 
 Run your script and use `1` as a first argument to make sure the condition is working.
 
@@ -1043,9 +1043,9 @@ Run your script and use `1` as a first argument to make sure the condition is wo
 - Type `./countdown.sh 1` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 61. ./countdown 0
+## 86. ./countdown 0
 
-### 61.1
+### 86.1
 
 Run it again and use anything but a positive integer as the only argument.
 
@@ -1054,9 +1054,9 @@ Run it again and use anything but a positive integer as the only argument.
 - Type `./countdown.sh 0` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 615. help
+## 87. help
 
-### 615.1
+### 87.1
 
 Looks like your `if` condition is working. Next, you want to loop over the argument and count down to zero from it. Check the `help` menu to see if there's any commands for this.
 
@@ -1065,9 +1065,9 @@ Looks like your `if` condition is working. Next, you want to loop over the argum
 - Enter the suggested command in the terminal
 - Type `help` in the terminal and press enter
 
-## 62. Add for loop for countdown
+## 88. Add for loop for countdown
 
-### 62.1
+### 88.1
 
 There's two `for` loops in there, you want the second one. Here's an example:
 
@@ -1105,9 +1105,9 @@ else
 fi
 ```
 
-## 63. ./countdown 10
+## 89. ./countdown 10
 
-### 63.1
+### 89.1
 
 Run your script and use `10` as the first argument.
 
@@ -1116,9 +1116,9 @@ Run your script and use `10` as the first argument.
 - Type `./countdown.sh 10` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 64. help
+## 90. help
 
-### 64.1
+### 90.1
 
 It works :smile: But I want it to pause for one second between each number. Check the `help` menu again to see if there's any commands that might help.
 
@@ -1127,9 +1127,9 @@ It works :smile: But I want it to pause for one second between each number. Chec
 - Enter the suggested command in the terminal
 - Type `help` in the terminal and press enter
 
-## 65. ls /
+## 91. ls /
 
-### 65.1
+### 91.1
 
 I'm not seeing the command I was hoping to. These are the built-in commands, where are the rest? Type `ls /` to look around.
 
@@ -1138,9 +1138,9 @@ I'm not seeing the command I was hoping to. These are the built-in commands, whe
 - Enter the suggested command in the terminal
 - Type `ls /` in the terminal and press enter
 
-## 66. ls /bin
+## 92. ls /bin
 
-### 66.1
+### 92.1
 
 The `/` listed what's in the root of the file system. I see a `bin` folder, `bin` stands for `binary`. View what's in it with `ls /bin`.
 
@@ -1149,9 +1149,9 @@ The `/` listed what's in the root of the file system. I see a `bin` folder, `bin
 - Enter the suggested command in the terminal
 - Type `ls /bin` in the terminal and press enter
 
-## 67. man sleep
+## 93. man sleep
 
-### 67.1
+### 93.1
 
 These are some non built-in commands. There's quite a few that should look familiar. One is `bash`, that's the one you used for the `shebang` in your scripts. I see one called `sleep`. View the manual of it.
 
@@ -1162,9 +1162,9 @@ These are some non built-in commands. There's quite a few that should look famil
 - Enter `man sleep` in the terminal
 - Press enter until you have seen the whole menu
 
-## 675. sleep 3
+## 94. sleep 3
 
-### 675.1
+### 94.1
 
 At the top, it says you can pause execution for a number of seconds. Try it out by entering `sleep 3` in the terminal.
 
@@ -1173,9 +1173,9 @@ At the top, it says you can pause execution for a number of seconds. Try it out 
 - Enter the suggested command in the terminal
 - Enter `sleep 3` in the terminal
 
-## 68. Add sleep to for loop
+## 95. Add sleep to for loop
 
-### 68.1
+### 95.1
 
 That should work. In your `for` loop, use `sleep` to make the script pause for `1` second after each number is printed.
 
@@ -1184,9 +1184,9 @@ That should work. In your `for` loop, use `sleep` to make the script pause for `
 - Add the suggestion to the `for` loop in your `countdown.sh` file
 - Add `sleep 1` after you print `i` in your `for` loop
 
-## 69. ./countdown 3
+## 96. ./countdown 3
 
-### 69.1
+### 96.1
 
 Run your script and use `3` as the first argument.
 
@@ -1195,9 +1195,9 @@ Run your script and use `3` as the first argument.
 - Type `./countdown.sh 3` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 692. Change to >=
+## 97. Change to >=
 
-### 692.1
+### 97.1
 
 Awesome. Except it should print `0` instead of stopping at `1`. Change the condition in your for loop so that it checks for `i >= 0`.
 
@@ -1225,9 +1225,9 @@ else
 fi
 ```
 
-## 694. ./countdown 3
+## 98. ./countdown 3
 
-### 694.1
+### 98.1
 
 Run your script with `3` as the argument again.
 
@@ -1236,9 +1236,9 @@ Run your script with `3` as the argument again.
 - Type `./countdown.sh 3` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 696. Add echo -e "title"
+## 99. Add echo -e "title"
 
-### 696.1
+### 99.1
 
 Excellent. I want it to display a title like the other script. Make it so that it prints `~~ Countdown Timer ~~` before anything else. Include a new line before and after it like you did for the other title.
 
@@ -1249,9 +1249,9 @@ Excellent. I want it to display a title like the other script. Make it so that i
 - Here's an example: `echo -e "\n<message>\n"`
 - Add `echo -e "\n~~ Countdown Timer ~~\n"` to the `countdown.sh` file after the comment
 
-## 698. ./countdown 1
+## 100. ./countdown 1
 
-### 698.1
+### 100.1
 
 Run your script and use `1` as the first argument again to see the title.
 
@@ -1260,9 +1260,9 @@ Run your script and use `1` as the first argument again to see the title.
 - Type `./countdown.sh 1` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 70. Add Multiline comment
+## 101. Add Multiline comment
 
-### 70.1
+### 101.1
 
 This is fun. You can create a multiline comment like this:
 
