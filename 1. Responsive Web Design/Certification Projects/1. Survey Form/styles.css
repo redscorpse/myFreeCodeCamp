@@ -1,0 +1,43 @@
+body {
+  font-family: 'Helvetica';
+  margin: 20px 40px;
+  background: linear-gradient(160deg, #cfc3d6, #ae9bba, #9b91bc, #71649c, #3a2d66);
+}
+
+
+form {
+  background-color: rgb(41,40,70);
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(240,240,240);
+
+  max-width: 35em;
+  margin: auto;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+}
+
+label {
+  display: block;
+}
+
+#name, #email, #number, #dropdown, textarea, input[type="submit"] {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  margin: 5px auto;
+}
+
+#submit {
+  display: block;
+  border: 1.5px solid #dadada;
+  border-radius: 10px;
+  background-color: #9b91bc;
+}
