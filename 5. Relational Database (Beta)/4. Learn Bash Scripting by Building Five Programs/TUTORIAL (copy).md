@@ -1290,9 +1290,9 @@ done
 '
 ```
 
-## 71. help while
+## 102. help while
 
-### 71.1
+### 102.1
 
 View the `help` menu for the `while` command to see if you can find anything.
 
@@ -1301,9 +1301,9 @@ View the `help` menu for the `while` command to see if you can find anything.
 - Here's an example: `help <command>`
 - Enter `help while` in the terminal
 
-## 73. Add I variable
+## 103. Add I variable
 
-### 73.1
+### 103.1
 
 It shows the syntax. First, below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each iteration of the `while` loop you can subtract `1` from it until it reaches `0`.
 
@@ -1322,9 +1322,9 @@ done
 I=$1
 ```
 
-## 74. Add while loop
+## 104. Add while loop
 
-### 74.1
+### 104.1
 
 The menu showed that you can make a `while` loop like this:
 
@@ -1347,9 +1347,9 @@ do
 done
 ```
 
-## 75. Add (( I-- ))
+## 105. Add (( I-- ))
 
-### 75.1
+### 105.1
 
 `I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subtract one from `I` on each pass. 
 
@@ -1364,9 +1364,9 @@ do
 done
 ```
 
-## 76. Add sleep 1
+## 106. Add sleep 1
 
-### 76.1
+### 106.1
 
 The last thing to do is to add the `sleep` again. In your `while` loop, add the code to make it `sleep` for `1` second. Add the code after the `(( I-- ))`.
 
@@ -1383,9 +1383,9 @@ do
 done
 ```
 
-## 77. ./countdown.sh 5
+## 107. ./countdown.sh 5
 
-### 77.1
+### 107.1
 
 Run the script and use 5 as the first argument.
 
@@ -1394,9 +1394,9 @@ Run the script and use 5 as the first argument.
 - Type `./countdown.sh 5` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 78. touch bingo.sh
+## 108. touch bingo.sh
 
-### 78.1
+### 108.1
 
 I think the countdown timer is finished. Feel free to try it with some other arguments. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.
 
@@ -1405,9 +1405,9 @@ I think the countdown timer is finished. Feel free to try it with some other arg
 - Type `touch bingo.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 79. chmod +x bingo.sh
+## 109. chmod +x bingo.sh
 
-### 79.1
+### 109.1
 
 Give your file executable permissions like you did for the other two.
 
@@ -1418,9 +1418,9 @@ Give your file executable permissions like you did for the other two.
 - You previously used `chmod +x countdown.sh`
 - Type `chmod +x bingo.sh` in the terminal and press enter
 
-## 80. Add shebang
+## 110. Add shebang
 
-### 80.1
+### 110.1
 
 Add a `shebang` at the top of your new script. It should use `bash` again like other two.
 
@@ -1432,9 +1432,9 @@ Add a `shebang` at the top of your new script. It should use `bash` again like o
 - It should look like this: `#!/bin/bash`
 - Add `#!/bin/bash` at the top of your `bingo.sh` file
 
-## 81. Add comment
+## 111. Add comment
 
-### 81.1
+### 111.1
 
 Add a comment below the `shebang` that says, `Bingo Number Generator`.
 
@@ -1444,9 +1444,9 @@ Add a comment below the `shebang` that says, `Bingo Number Generator`.
 - Add `#Bingo Number Generator` below the `shebang`
 - Capitalization matters
 
-## 815. Add echo -e "title"
+## 112. Add echo -e "title"
 
-### 815.1
+### 112.1
 
 Before I forget, use a single `echo` command to print a title for this program. It should say `~~ Bingo Number Generator ~~` with an empty line before and after it.
 
@@ -1459,9 +1459,9 @@ Before I forget, use a single `echo` command to print a title for this program. 
 - You previously used `echo -e "\n~~ Countdown Timer ~~\n"`
 - Add `echo -e "\n~~ Bingo Number Generator ~~\n"` below the comment of your `bingo.sh` file
 
-## 817. Add NUMBER=5 variable
+## 113. Add NUMBER=5 variable
 
-### 817.1
+### 113.1
 
 In your script, create a `NUMBER` variable that equals `5`.
 
@@ -1470,9 +1470,9 @@ In your script, create a `NUMBER` variable that equals `5`.
 - Here's an example: `VARIABLE_NAME=VALUE`
 - Add `NUMBER=5` to the bottom of your `bingo.sh` file
 
-## 818. echo $NUMBER
+## 114. echo $NUMBER
 
-### 818.1
+### 114.1
 
 Below your new variable, use `echo` to print it to the screen.
 
@@ -1482,9 +1482,9 @@ Below your new variable, use `echo` to print it to the screen.
 - Use `NUMBER` in place of `<variable>`
 - Add `echo $NUMBER` at the bottom of your `bingo.sh` file
 
-## 819. ./bingo.sh
+## 115. ./bingo.sh
 
-### 819.1
+### 115.1
 
 Run the script by executing it.
 
@@ -1493,9 +1493,9 @@ Run the script by executing it.
 - Type `./bingo.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 82. printenv
+## 116. printenv
 
-### 82.1
+### 116.1
 
 The numbers in bingo go up to 75, each number has a letter from the word `bingo` associated with it. You will need to randomly generate a number between 1 and 75. Bash may have something that can help you here. A shell comes with environment variables. View them by entering `printenv` in the terminal.
 
@@ -1503,9 +1503,9 @@ The numbers in bingo go up to 75, each number has a letter from the word `bingo`
 
 - Type `printenv` in the terminal and press enter
 
-## 822. echo $LANG
+## 117. echo $LANG
 
-### 822.1
+### 117.1
 
 These are all environment variables, they are predefined and loaded with each shell. Most of them aren’t very relevant, but it’s nice to know they’re there. One of them is `LANG`. Use `echo` to print it in the terminal.
 
@@ -1514,9 +1514,9 @@ These are all environment variables, they are predefined and loaded with each sh
 - Here's an example: `echo $<variable>`
 - Type `echo $LANG` in the terminal and press enter
 
-## 824. declare -p
+## 118. declare -p
 
-### 824.1
+### 118.1
 
 View all variables in the shell with `declare -p`. `-p` stands for `print`
 
@@ -1524,9 +1524,9 @@ View all variables in the shell with `declare -p`. `-p` stands for `print`
 
 - Type `declare -p` in the terminal and press enter
 
-## 826. echo $RANDOM
+## 119. echo $RANDOM
 
-### 826.1
+### 119.1
 
 This list includes all the environment variables, and any others that may have been created in the current shell. There's one named `RANDOM`. Use `echo` to print it in the terminal.
 
@@ -1535,9 +1535,9 @@ This list includes all the environment variables, and any others that may have b
 - Here's an example: `echo $<variable>`
 - Type `echo $RANDOM` in the terminal and press enter
 
-## 828. Change to NUMBER=$RANDOM
+## 120. Change to NUMBER=$RANDOM
 
-### 828.1
+### 120.1
 
 Back in your script, use the `RANDOM` variable to set `NUMBER` to a random number instead of `5`.
 
@@ -1545,9 +1545,9 @@ Back in your script, use the `RANDOM` variable to set `NUMBER` to a random numbe
 
 - Change `NUMBER=5` to `NUMBER=$RANDOM`
 
-## 83. ./bingo.sh
+## 121. ./bingo.sh
 
-### 83.1
+### 121.1
 
 Run the script a few times in a row to make sure it's working.
 
@@ -1556,9 +1556,9 @@ Run the script a few times in a row to make sure it's working.
 - Type `./bingo.sh` in the terminal and press enter two times in a row
 - Make sure you are in the `project` folder first
 
-## 835. Change to NUMBER=$RANDOM%75
+## 122. Change to NUMBER=$RANDOM%75
 
-### 835.1
+### 122.1
 
 The `RANDOM` variable will generate a random number between 0 and 32767. You can use the `modulus` operator to make it in the range you want. In your script, change the `NUMBER` variable to `$RANDOM%75`.
 
@@ -1566,9 +1566,9 @@ The `RANDOM` variable will generate a random number between 0 and 32767. You can
 
 - Change `NUMBER=$RANDOM` to `NUMBER=$RANDOM%75`
 
-## 84. ./bingo.sh
+## 123. ./bingo.sh
 
-### 84.1
+### 123.1
 
 Run the script again.
 
@@ -1577,9 +1577,9 @@ Run the script again.
 - Type `./bingo.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 881. I=0
+## 124. I=0
 
-### 881.1
+### 124.1
 
 Bash sees everything as a string so it just printed the `%75` part literally. In the terminal, create an `I` variable equal to `0` (zero), so you can play with it and figure out how to do some calculations.
 
@@ -1587,9 +1587,9 @@ Bash sees everything as a string so it just printed the `%75` part literally. In
 
 - Type `I=0` in the terminal and press enter
 
-## 884. echo $I
+## 125. echo $I
 
-### 884.1
+### 125.1
 
 In the terminal, use `echo` to print your new variable.
 
@@ -1598,9 +1598,9 @@ In the terminal, use `echo` to print your new variable.
 - Here's an example: `echo $<variable>`
 - Type `echo $I` in the terminal and press enter
 
-## 887. (( I++ )) 
+## 126. (( I++ )) 
 
-### 887.1
+### 126.1
 
 I noticed that you used double parenthesis in the `while` loop of your countdown timer to subtract one from `I`. Type `(( I++ ))` in the terminal to see if anything happens.
 
@@ -1608,9 +1608,9 @@ I noticed that you used double parenthesis in the `while` loop of your countdown
 
 - Type `(( I++ ))` in the terminal and press enter
 
-## 89. echo $I
+## 127. echo $I
 
-### 89.1
+### 127.1
 
 There was no output. Use `echo` to print `I` in the terminal again.
 
@@ -1618,9 +1618,9 @@ There was no output. Use `echo` to print `I` in the terminal again.
 
 - Type `echo $I` in the terminal and press enter
 
-## 891. help let
+## 128. help let
 
-### 891.1
+### 128.1
 
 The double parenthesis performed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.
 
@@ -1628,9 +1628,9 @@ The double parenthesis performed the calculation, changing the value of `I` from
 
 - Type `help let` in the terminal and press enter
 
-## 893. (( I += 10 ))
+## 129. (( I += 10 ))
 
-### 893.1
+### 129.1
 
 You used several of these now, including in the `for` loop from the countdown timer. Enter `(( I += 10 ))` in the terminal to increment `I` by `10`. Note that you don't need to prepend variables with `$` inside these parenthesis.
 
@@ -1638,9 +1638,9 @@ You used several of these now, including in the `for` loop from the countdown ti
 
 - Type `(( I += 10 ))` in the terminal and press enter
 
-## 896. echo $I
+## 130. echo $I
 
-### 896.1
+### 130.1
 
 Use `echo` to print your `I` variable again.
 
@@ -1648,9 +1648,9 @@ Use `echo` to print your `I` variable again.
 
 - Type `echo $I` in the terminal and press enter.
 
-## 897. $(( I + 4 ))
+## 131. $(( I + 4 ))
 
-### 897.1
+### 131.1
 
 It should have printed `11` for the value of `I`. Using the double parenthesis like you have been is good for changing variable values or making comparisons. It makes the calculation in place and provides no output. If you want to make a calculation and do something with the result, add a `$` in front like this: `$(( ... ))`. Type `$(( I + 4 ))` in the terminal to see what happens.
 
@@ -1659,9 +1659,9 @@ It should have printed `11` for the value of `I`. Using the double parenthesis l
 - If it didn't print `11` for `I`, enter `I=11` to set it to `11`
 - Type `$(( I + 4 ))` in the terminal and press enter
 
-## 899. echo $(( I + 4 ))
+## 132. echo $(( I + 4 ))
 
-### 899.1
+### 132.1
 
 It should say, `bash: 15: command not found`. It replaced the command with the result of the calculation. Effectively, trying to run `15` as a command. Enter the same command, but put `echo` in front of it. The command was `$(( I + 4 ))`
 
@@ -1669,9 +1669,9 @@ It should say, `bash: 15: command not found`. It replaced the command with the r
 
 - Type `echo $(( I + 4 ))` in the terminal and press enter
 
-## 902. echo $I
+## 133. echo $I
 
-### 902.1
+### 133.1
 
 Again, it replaced the calculation with the result. So it was basically the same as if you entered `echo 15`. Use `echo` to print `I` to the screen again.
 
@@ -1679,9 +1679,9 @@ Again, it replaced the calculation with the result. So it was basically the same
 
 - Type `echo $I` in the terminal and press enter
 
-## 905. J=$(( I - 6 ))
+## 134. J=$(( I - 6 ))
 
-### 905.1
+### 134.1
 
 It should still have printed `11` for `I`. See the hints if it didn't. These double parenthesis with a `$` are how you can assign a variable to some calculation. In the terminal, create a `J` variable, and use the `$(( ... ))` syntax to set its value to `I - 6`.
 
@@ -1690,9 +1690,9 @@ It should still have printed `11` for `I`. See the hints if it didn't. These dou
 - If it didn't print `11` for `I`, enter `I=11` to set it to `11`
 - Type `J=$(( I - 6 ))` in the terminal and press enter
 
-## 908. echo $J
+## 135. echo $J
 
-### 908.1
+### 135.1
 
 Use `echo` to print `J`.
 
@@ -1701,9 +1701,9 @@ Use `echo` to print `J`.
 - Here's an example: `echo $<variable>`
 - Type `echo $J` in the terminal and press enter
 
-## 911. echo $(( J * 5 + 25 ))
+## 136. echo $(( J * 5 + 25 ))
 
-### 911.1
+### 136.1
 
 `J` should equal `5`. For some more practice, use `echo` to print the value `J * 5 + 25`. 
 
@@ -1711,9 +1711,9 @@ Use `echo` to print `J`.
 
 - Type `echo $(( J * 5 + 25 ))` in the terminal and press enter
 
-## 912. echo $J
+## 137. echo $J
 
-### 912.1
+### 137.1
 
 It should have printed `50`. Print `J` with `echo` again.
 
@@ -1722,9 +1722,9 @@ It should have printed `50`. Print `J` with `echo` again.
 - Here's an example: `echo $<variable>`
 - Type `echo $J` in the terminal and press enter
 
-## 913. declare -p
+## 138. declare -p
 
-### 913.1
+### 138.1
 
 So, as a reminder, `(( ... ))` will perform a calculation or operation and output nothing. `$(( ... ))` will replace the calculation with the result of it. You made a few variables in this shell, view them with `declare -p`.
 
@@ -1732,9 +1732,9 @@ So, as a reminder, `(( ... ))` will perform a calculation or operation and outpu
 
 - Type `declare -p` in the terminal and press enter
 
-## 914. declare -p J
+## 139. declare -p J
 
-### 914.1
+### 139.1
 
 `declare` can be used to create variables, but you are just going to use it to view them for now. If you scroll up a little, you should find your `I` and `J` variables in there. View `J` with `declare -p J`.
 
@@ -1742,9 +1742,9 @@ So, as a reminder, `(( ... ))` will perform a calculation or operation and outpu
 
 - Type `declare -p J` in the terminal and press enter
 
-## 916. declare -p RANDOM
+## 140. declare -p RANDOM
 
-### 916.1
+### 140.1
 
 I saw `RANDOM` in that list, too. View it with `declare -p <variable>` like you did for `J`.
 
@@ -1752,9 +1752,9 @@ I saw `RANDOM` in that list, too. View it with `declare -p <variable>` like you 
 
 - Type `declare -p RANDOM` in the terminal and press enter
 
-## 918. echo $(( RANDOM % 75 ))
+## 141. echo $(( RANDOM % 75 ))
 
-### 918.1
+### 141.1
 
 Okay, I think I finally know how to get the random number for the Bingo Number Generator. Use `echo` and `RANDOM % 75` to print a random number in the terminal.
 
@@ -1764,9 +1764,9 @@ Okay, I think I finally know how to get the random number for the Bingo Number G
 - Here's an example: `echo $(( <calculation> ))`
 - Type `echo $(( RANDOM % 75 ))` in the terminal and press enter
 
-## 92. echo $(( RANDOM % 75 + 1 ))
+## 142. echo $(( RANDOM % 75 + 1 ))
 
-### 92.1
+### 142.1
 
 One tiny problem, that calculation will give a number between 0 and 74. Enter the same command in the terminal, but add `1` to the calculation to get a random number between 1 and 75.
 
@@ -1774,9 +1774,9 @@ One tiny problem, that calculation will give a number between 0 and 74. Enter th
 
 - Type `echo $(( RANDOM % 75 + 1 ))` in the terminal and press enter
 
-## 928. Set NUMBER=$(( RANDOM % 75 + 1))
+## 143. Set NUMBER=$(( RANDOM % 75 + 1))
 
-### 928.1
+### 143.1
 
 Back in your `bingo.sh` script, change the `NUMBER` variable so that it starts as a random number between 1 and 75 using the syntax you have been practicing.
 
@@ -1786,9 +1786,9 @@ Back in your `bingo.sh` script, change the `NUMBER` variable so that it starts a
 - Use the `$(( ... ))` syntax to make the calculation
 - It should look like this: `NUMBER=$(( RANDOM % 75 + 1 ))`
 
-## 93. run ./bingo.sh
+## 144. run ./bingo.sh
 
-### 93.1
+### 144.1
 
 Run your script a few times in a row to make sure it's working.
 
@@ -1798,9 +1798,9 @@ Run your script a few times in a row to make sure it's working.
 - Make sure you are in the `project` folder first
 - Run it at least two times in a row
 
-## 94. Add TEXT variable
+## 145. Add TEXT variable
 
-### 94.1
+### 145.1
 
 Next, create a `TEXT` variable and set the value to `"The next number is, "`. When the script is finished, the output will be something like `The next number is B:15`.
 
@@ -1809,9 +1809,9 @@ Next, create a `TEXT` variable and set the value to `"The next number is, "`. Wh
 - Make sure there's a space after the comma
 - Add `TEXT="The next number is, "` to the `bingo.sh` file
 
-## 945. help let
+## 146. help let
 
-### 945.1
+### 146.1
 
 The letter that goes with the random number depends on what the number is. If it's 15 or less, it will be a `B`. I saw some comparisons in the `help let` menu, take a look at it again.
 
@@ -1819,9 +1819,9 @@ The letter that goes with the random number depends on what the number is. If it
 
 - Type `help let` in the terminal and press enter
 
-## 95. Add first if <= 15
+## 147. Add first if <= 15
 
-### 95.1
+### 147.1
 
 You used the double square brackets with your `if` statement in the last program, but you can use the double parenthesis with these operators as well. In your script, create an `if` statement that uses double parenthesis for the condition. Check if the number variable is less than or equal to 15. If it is, use your two variables to print `The next number is, B:<number>`.
 
@@ -1846,9 +1846,9 @@ then
 fi
 ```
 
-## 96. Add elif -le 30
+## 148. Add elif -le 30
 
-### 96.1
+### 148.1
 
 `if` statements can have an "else if" area like this:
 ```sh
@@ -1887,9 +1887,9 @@ then
 fi
 ```
 
-## 97. Add elif < 46
+## 149. Add elif < 46
 
-### 97.1
+### 149.1
 
 You can add as many `elif` sections to an `if` statement as you want. Add another `elif`, below the last, one that uses the double parenthesis to check if the number variable is less than 46. If it is, use your two variables to print `The next number is, N:<number>`
 
@@ -1934,9 +1934,9 @@ then
 fi
 ```
 
-## 98. Add elif -lt 61
+## 150. Add elif -lt 61
 
-### 98.1
+### 150.1
 
 Run your script if you want to see the output. It should print one of the sentences if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`
 
@@ -1970,9 +1970,9 @@ then
 fi
 ```
 
-## 99. Add else
+## 151. Add else
 
-### 99.1
+### 151.1
 
 One more case to handle. Add an `else` at the bottom of the `if` that uses your two variables to print `The next number is, O:<number>`.
 
@@ -2017,9 +2017,9 @@ else
 fi
 ```
 
-## 100. ./bingo.sh
+## 152. ./bingo.sh
 
-### 100.1
+### 152.1
 
 Run your script a few times and make sure it's working.
 
@@ -2029,9 +2029,9 @@ Run your script a few times and make sure it's working.
 - Make sure you are in the `project` folder first
 - Run it at least two times in a row
 
-## 101. touch fortune.sh
+## 153. touch fortune.sh
 
-### 101.1
+### 153.1
 
 I think the generator is done :smile: The next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.
 
@@ -2040,9 +2040,9 @@ I think the generator is done :smile: The next project is a fortune teller. Use 
 - Type `touch fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 102. chmod +x fortune.sh
+## 154. chmod +x fortune.sh
 
-### 102.1
+### 154.1
 
 Give your file executable permissions.
 
@@ -2053,9 +2053,9 @@ Give your file executable permissions.
 - You previously used `chmod +x bingo.sh`
 - Type `chmod +x fortune.sh` in the terminal and press enter
 
-## 103. Add shebang
+## 155. Add shebang
 
-### 103.1
+### 155.1
 
 Add a `shebang` at the top of your new file that uses `bash` again.
 
@@ -2067,9 +2067,9 @@ Add a `shebang` at the top of your new file that uses `bash` again.
 - It should look like this: `#!/bin/bash`
 - Add `#!/bin/bash` at the top of your `fortune.sh` file
 
-## 104. Add comment
+## 156. Add comment
 
-### 104.1
+### 156.1
 
 Add comment `Program to tell a persons fortune`
 
@@ -2079,9 +2079,9 @@ Add comment `Program to tell a persons fortune`
 - Add `#Program to tell a persons fortune` below the `shebang`
 - Capitalization matters
 
-## 105. Add echo "title"
+## 157. Add echo "title"
 
-### 105.1
+### 157.1
 
 Add a title for this one like the others. This one should say `~~ Fortune Teller ~~`. Don't forget the empty line before and after it.
 
@@ -2095,9 +2095,9 @@ Add a title for this one like the others. This one should say `~~ Fortune Teller
 - You previously used `echo -e "\n~~ Bingo Number Generator ~~\n"`
 - Add `echo -e "\n~~ Fortune Teller ~~\n"` below the comment of your `fortune.sh` file
 
-## 106. ./fortune.sh
+## 158. ./fortune.sh
 
-### 106.1
+### 158.1
 
 Run the file once to make sure it's working.
 
@@ -2106,9 +2106,9 @@ Run the file once to make sure it's working.
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 107. ARR=("a" "b" "c")
+## 159. ARR=("a" "b" "c")
 
-### 107.1
+### 159.1
 
 This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first :smile: In the terminal, create an array like this: `ARR=("a" "b" "c")`
 
@@ -2117,9 +2117,9 @@ This program will have an array of responses. One will be printed randomly after
 - Type the suggested command in the terminal
 - Type `ARR=("a" "b" "c")` in the terminal and press enter
 
-## 108. echo ${ARR[1]}
+## 160. echo ${ARR[1]}
 
-### 108.1
+### 160.1
 
 Each variable in the array is like any other variable, just combined into a single variable. In the terminal, print the second item in the array with `echo ${ARR[1]}`. Note that the first item would be index zero.
 
@@ -2127,9 +2127,9 @@ Each variable in the array is like any other variable, just combined into a sing
 
 - Type `echo ${ARR[1]}` in the terminal
 
-## 109. echo ${ARR[@]}
+## 161. echo ${ARR[@]}
 
-### 109.1
+### 161.1
 
 If you recall, you were able to print all the arguments to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarly, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.
 
@@ -2138,9 +2138,9 @@ If you recall, you were able to print all the arguments to your `countdown.sh` s
 - Here's an example `echo ${ARR[<index>]}`
 - Type `echo ${ARR[@]}` in the terminal and press enter
 
-## 110. declare -p ARR
+## 162. declare -p ARR
 
-### 110.1
+### 162.1
 
 The variable must be in that `declare` list. View your array variable using the `declare` command and the `-p` flag.
 
@@ -2149,9 +2149,9 @@ The variable must be in that `declare` list. View your array variable using the 
 - Here's an example: `declare -p <variable>`
 - Type `declare -p ARR` in the terminal
 
-## 111. Add RESPONSES array
+## 163. Add RESPONSES array
 
-### 111.1
+### 163.1
 
 The `-a` next to it stands for `array`. In your script, create an array named `RESPONSES`. Give it these six values: `Yes`, `No`, `Maybe`, `Outlook good`, `Don't count on it`, and `Ask again later`.
 
@@ -2162,9 +2162,9 @@ The `-a` next to it stands for `array`. In your script, create an array named `R
 - You created your other array with `ARR=("a" "b" "c")`
 - Add `RESPONSES=("Yes" "No" "Maybe" "Outlook good" "Don't count on it" "Ask again later")` in your script
 
-## 112. echo ${RESPONSES[5]}
+## 164. echo ${RESPONSES[5]}
 
-### 112.1
+### 164.1
 
 In your script, use `echo` to print the last item in the array.
 
@@ -2174,9 +2174,9 @@ In your script, use `echo` to print the last item in the array.
 - Remember that the first item starts at zero
 - Add `echo ${RESPONSES[5]}` to your `fortune.sh` file
 
-## 113. ./fortune.sh
+## 165. ./fortune.sh
 
-### 113.1
+### 165.1
 
 Run it to see the output.
 
@@ -2185,9 +2185,9 @@ Run it to see the output.
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 114. Add N=$(( RANDOM % 6 ))
+## 166. Add N=$(( RANDOM % 6 ))
 
-### 114.1
+### 166.1
 
 You will randomly print one of the values. In your script, create a variable named `N`. Set it equal to a random number between `0` and `5`, the first and last index of the array.
 
@@ -2199,9 +2199,9 @@ You will randomly print one of the values. In your script, create a variable nam
 - Calculate a random number in the range you want with `RANDOM % 6`
 - Add `N=$(( RANDOM % 6 ))` to the script
 
-## 115. Change to echo ${RESPONSES[$N]}
+## 167. Change to echo ${RESPONSES[$N]}
 
-### 115.1
+### 167.1
 
 Change your `echo` command to print the item in the array whose index is the random number you generated.
 
@@ -2211,9 +2211,9 @@ Change your `echo` command to print the item in the array whose index is the ran
 - Don't forget that scripts run from top to bottom, so you can't use any variables before they are created
 - Change the `echo` line to `echo ${RESPONSES[$N]}`
 
-## 116. help
+## 168. help
 
-### 116.1
+### 168.1
 
 You will create a function to generate an answer. Check the `help` menu to see if you can find anything.
 
@@ -2222,9 +2222,9 @@ You will create a function to generate an answer. Check the `help` menu to see i
 - Enter the suggested command in the terminal
 - Type `help` in the terminal
 
-## 117. help function
+## 169. help function
 
-### 117.1
+### 169.1
 
 See any that might help? There's one that says `function`. See if you can find out more about it.
 
@@ -2234,9 +2234,9 @@ See any that might help? There's one that says `function`. See if you can find o
 - Here's an example: `help <command>`
 - Type `help function` in the terminal
 
-## 118. Add GET_FORTUNE function
+## 170. Add GET_FORTUNE function
 
-### 118.1
+### 170.1
 
 It looks like you can create a function like this:
 
@@ -2256,9 +2256,9 @@ GET_FORTUNE() {}
 ```
 - Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
-## 119. Add echo Ask a yes or no question
+## 171. Add echo Ask a yes or no question
 
-### 119.1
+### 171.1
 
 In your function, use `echo` to print `Ask a yes or no question:`
 
@@ -2272,9 +2272,9 @@ GET_FORTUNE() {
 ```
 - Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
-## 120. Add GET_FORTUNE function call
+## 172. Add GET_FORTUNE function call
 
-### 120.1
+### 172.1
 
 Call your function by putting the name of it below where you create it. No `$` needed. Make sure the response you are printing is at the bottom of the file.
 
@@ -2283,9 +2283,9 @@ Call your function by putting the name of it below where you create it. No `$` n
 - Add `GET_FORTUNE` below where you create your function to call it
 - Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
-## 121. ./fortune.sh
+## 173. ./fortune.sh
 
-### 121.1
+### 173.1
 
 Run your script to make sure it's working.
 
@@ -2294,9 +2294,9 @@ Run your script to make sure it's working.
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 122. Add read QUESTION
+## 174. Add read QUESTION
 
-### 122.1
+### 174.1
 
 In your function after you print the sentence, use `read` to get user input into a variable named `QUESTION`.
 
@@ -2312,9 +2312,9 @@ GET_FORTUNE() {
 ```
 - Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
-## 123. ./fortune.sh
+## 175. ./fortune.sh
 
-### 123.1
+### 175.1
 
 Run the script again to test it out. Enter a question when it asks.
 
@@ -2323,9 +2323,9 @@ Run the script again to test it out. Enter a question when it asks.
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 124. help
+## 176. help
 
-### 124.1
+### 176.1
 
 I want to make sure the input is a question. You are going to add a loop that asks for input until the input ends with a question mark. View the `help` menu to see if you can find an appropriate loop.
 
@@ -2333,9 +2333,9 @@ I want to make sure the input is a question. You are going to add a loop that as
 
 - Type `help` in the terminal and press enter
 
-## 125. help until
+## 177. help until
 
-### 125.1
+### 177.1
 
 View more about that `until` command. That might be the one to use here.
 
@@ -2344,9 +2344,9 @@ View more about that `until` command. That might be the one to use here.
 - Use `help <command>` to view more about a command
 - Type `help until` in the terminal and press enter
 
-## 126. Add until loop
+## 178. Add until loop
 
-### 126.1
+### 178.1
 
 The `until` loop is very similar to the `while` loop you used. It will execute the loop until a condition is met. Here's an example:
 
@@ -2374,9 +2374,9 @@ done
 - You should only call the `GET_FORTUNE` function once
 - Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
-## 127. ./fortune.sh
+## 179. ./fortune.sh
 
-### 127.1
+### 179.1
 
 Run the script and enter something other than `test?`. Then enter `test?` after it asks for a question the second time.
 
@@ -2385,9 +2385,9 @@ Run the script and enter something other than `test?`. Then enter `test?` after 
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 128. help [[ expression ]]
+## 180. help [[ expression ]]
 
-### 128.1
+### 180.1
 
 View that `help [[ expression ]]` menu again. You need to find out how to test if the input ends with a question mark (`?`).
 
@@ -2395,9 +2395,9 @@ View that `help [[ expression ]]` menu again. You need to find out how to test i
 
 - Type `help [[` or `help [[ expression ]]` in the terminal and press enter
 
-## 129. [[ hello == hello ]]; echo $?
+## 181. [[ hello == hello ]]; echo $?
 
-### 129.1
+### 181.1
 
 Let's play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` syntax you used before to test if `hello` is equal to `hello`.
 
@@ -2406,9 +2406,9 @@ Let's play with these again. You can test if two strings are the same with `==`.
 - Be sure to use the `==` operator
 - Type `[[ hello == hello ]]; echo $?` in the terminal and press enter
 
-## 130. [[ hello == world ]]; echo $?
+## 182. [[ hello == world ]]; echo $?
 
-### 130.1
+### 182.1
 
 Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`.
 

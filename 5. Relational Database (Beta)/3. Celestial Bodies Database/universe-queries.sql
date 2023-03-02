@@ -12,8 +12,11 @@ VALUES
 ('About freecodecamp projects', 'This is the first certification project from Relational Database (Beta), you can check them all from https://www.freecodecamp.org/learn/relational-database/');
 
 CREATE TABLE galaxy(galaxy_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, solar_mass NUMERIC(37,9), distance_ly NUMERIC(37, 9) NOT NULL);
+
 CREATE TABLE star(star_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, solar_mass NUMERIC(37,9), distance_ly NUMERIC(37, 9) NOT NULL, constellation VARCHAR(50));
+
 CREATE TABLE planet(planet_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, earth_mass NUMERIC(37,9), distance_ly NUMERIC(37, 9) NOT NULL, mean_radius_km NUMERIC(9,3), temperature_K INT, atmosphere BOOLEAN, composition TEXT, habitable BOOLEAN, has_moon BOOLEAN);
+
 CREATE TABLE moon(moon_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, mass_kg NUMERIC(37,9) NOT NULL, mean_orbit_radius_km NUMERIC(37, 9));
 
 -- references: moon -> planet -> star -> galaxy
@@ -99,3 +102,15 @@ VALUES
 ('Hyperion', 'A strange, irregularly-shaped moon of Saturn with a very low density.', 4530, 5.62e18, 1481100, 6),
 ('Phoebe', 'An irregularly-shaped moon of Saturn with a retrograde orbit.', 4530, 8.292e18, 12947677, 6),
 ('Mimas', 'A heavily cratered moon of Saturn with a giant impact crater that makes it resemble the Death Star from Star Wars.', 4530, 3.75e19, 185520, 6);
+
+
+
+CREATE TABLE units_reference(units_reference_id SERIAL PRIMARY KEY , name VARCHAR(30) UNIQUE NOT NULL, magnitude NUMERIC(36,12), units TEXT NOT NULL);
+
+INSERT INTO about(name, magnitude, units) 
+VALUES
+("Solar Mass (M☉)", 1.989e+30, "kg"),
+("Solar Radius (R☉)", 695700000, "m"),
+("Earth Mass", 5.97e+24, "kg"),
+("Earth Radius", 6371000, "m"),
+("Light-year (ly)", 9.46e+12, "km");
