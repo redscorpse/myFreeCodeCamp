@@ -4,13 +4,6 @@
 CREATE DATABASE universe;
 \c universe
 
-CREATE TABLE about(about_id SERIAL PRIMARY KEY , name VARCHAR(30) UNIQUE NOT NULL, comments TEXT NOT NULL);
-INSERT INTO about(name, comments) 
-VALUES
-('About this project', 'This is a project for getting the Relational Database certification from freecodecamp.org, the values from the tables may not be correct'), 
-('About the author', 'You can check my curriculum progress at https://www.freecodecamp.org/redscorpse'), 
-('About freecodecamp projects', 'This is the first certification project from Relational Database (Beta), you can check them all from https://www.freecodecamp.org/learn/relational-database/');
-
 CREATE TABLE galaxy(galaxy_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, solar_mass NUMERIC(37,9), distance_ly NUMERIC(37, 9) NOT NULL);
 
 CREATE TABLE star(star_id SERIAL PRIMARY KEY, name VARCHAR(30) UNIQUE NOT NULL, description TEXT, age_myr INT, solar_mass NUMERIC(37,9), distance_ly NUMERIC(37, 9) NOT NULL, constellation VARCHAR(50));
