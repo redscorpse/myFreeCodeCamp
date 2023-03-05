@@ -98,12 +98,21 @@ VALUES
 
 
 
-CREATE TABLE units_reference(units_reference_id SERIAL PRIMARY KEY , name VARCHAR(30) UNIQUE NOT NULL, magnitude NUMERIC(36,12), units TEXT NOT NULL);
+CREATE TABLE units_reference(units_reference_id SERIAL PRIMARY KEY , name VARCHAR(30) UNIQUE NOT NULL, magnitude NUMERIC(40,8), units TEXT NOT NULL);
 
-INSERT INTO about(name, magnitude, units) 
+INSERT INTO units_reference(name, magnitude, units) 
 VALUES
-("Solar Mass (M☉)", 1.989e+30, "kg"),
-("Solar Radius (R☉)", 695700000, "m"),
-("Earth Mass", 5.97e+24, "kg"),
-("Earth Radius", 6371000, "m"),
-("Light-year (ly)", 9.46e+12, "km");
+('Solar Mass (M☉)', 1.989e+30, 'kg'),
+('Solar Radius (R☉)', 695700000, 'm'),
+('Earth Mass', 5.97e+24, 'kg'),
+('Earth Radius', 6371000, 'm'),
+('Light-year (ly)', 9.46e+12, 'km');
+
+-- exit
+\q
+
+# bash
+# Export:
+# pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+# Import: create a database called universe and overwrite
+# psql -U universe < universe.sql

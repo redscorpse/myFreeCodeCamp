@@ -1,7 +1,7 @@
 body {
 	text-align: center;
 	background-color: #1B1B30;
-	color: rgb(245,246,247);
+	color: rgb(245,246,247); 
 }
 
 #learn-curriculum-map li {
@@ -21,8 +21,9 @@ body {
 }
 
 #learn-curriculum-map {
-	margin: 15px;
+	margin: 15px auto;
 	padding: 0;
+	max-width: 13cm;;
 }
 #learn-curriculum-map li a {
 	color: rgb(245,246,247);
@@ -30,8 +31,11 @@ body {
 }
 
 #learn-curriculum-map svg {
-	width: 3em;
-	height: 3em;
+	width: 3.5em;
+	height: 3.5em;
 	color: rgb(245,246,247);
 }
 
+h1 {
+	font-family: 'Fira Code';
+}
