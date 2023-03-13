@@ -49,8 +49,8 @@ do
       echo Inserted into majors_courses, $MAJOR : $COURSE
     fi
 
-    fi
-  done
+  fi
+done
 
 cat students.csv | while IFS="," read FIRST LAST MAJOR GPA 
 do
