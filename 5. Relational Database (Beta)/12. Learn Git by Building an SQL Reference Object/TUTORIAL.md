@@ -2,9 +2,9 @@
 
 > Welcome to the git lessons!
 
-## 10. Start Terminal
+## 1. Start Terminal
 
-### 10.1
+### 1.1
 
 The first thing you need to do is start the terminal. Open a new one by clicking the "hamburger" menu at the top left of the window, going to the "terminal" section, and clicking "new terminal". Once you open a new one, type `echo hello git` into the terminal and press enter.
 
@@ -13,9 +13,9 @@ The first thing you need to do is start the terminal. Open a new one by clicking
 - Follow the directions closely
 - If the tests don't pass, trash all the terminals with the trash can icon at the top right of the terminal. Then, redo those instructions
 
-## 20. Make Directory
+## 2. Make Directory
 
-### 20.1
+### 2.1
 
 You should be in the `project` folder in the terminal you opened. Use the terminal to make a new directory named `sql_reference` in the `project` folder. As a reminder, you can use the `mkdir` command to make a new folder.
 
@@ -25,9 +25,9 @@ You should be in the `project` folder in the terminal you opened. Use the termin
 - Enter `cd ~/project` to get to the `project` folder if you aren't there
 - Don't try to create the folder with another method
 
-## 30. Change Directory
+## 3. Change Directory
 
-### 30.1
+### 3.1
 
 Use the "change directory" command in the terminal to change to your new folder.
 
@@ -37,9 +37,9 @@ Use the "change directory" command in the terminal to change to your new folder.
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` to get to the `project` folder if you aren't there
 
-## 40. Initialize a git Repository
+## 4. Initialize a git Repository
 
-### 40.1
+### 4.1
 
 Git is a version control system to keep track of your code. This folder will be your git repository. Turn it into one by typing `git init` in the terminal from this folder.
 
@@ -49,9 +49,9 @@ Git is a version control system to keep track of your code. This folder will be 
 - Make sure you are in the `sql_reference` folder first
 - Enter `cd ~/project/sql_reference` to get to the folder if you aren't there
 
-## 50. View .git Folder
+## 5. View .git Folder
 
-### 50.1
+### 5.1
 
 Use the list command with the `-a` flag to list the hidden folders and files.
 
@@ -62,9 +62,9 @@ Use the list command with the `-a` flag to list the hidden folders and files.
 - Make sure you are in the `sql_reference` folder first
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 60. git status
+## 6. git status
 
-### 60.1
+### 6.1
 
 The `git init` command created that `.git` folder for you. It's what keeps track of all the things in your repository. Use `git status` to see the status of where you are. This command will be your best friend.
 
@@ -74,9 +74,9 @@ The `git init` command created that `.git` folder for you. It's what keeps track
 - Make sure you are in the `sql_reference` folder first
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 70. Checkout main Branch
+## 7. Checkout main Branch
 
-### 70.1
+### 7.1
 
 A git repository has branches to help keep track of things you are doing with your code. It's common to have a `main` branch which might be for your production code, and other branches for adding new features or fixing bugs. You can create and go to a new branch with `git checkout -b new_branch`. The `-b` stands for "branch". Use that command to switch to a new branch named `main`.
 
@@ -87,9 +87,9 @@ A git repository has branches to help keep track of things you are doing with yo
 - Make sure you are in your `sql-reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 80. git status
+## 8. git status
 
-### 80.1
+### 8.1
 
 Check your status again with `git status`.
 
@@ -99,9 +99,9 @@ Check your status again with `git status`.
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 90. touch README.md
+## 9. touch README.md
 
-### 90.1
+### 9.1
 
 Now you are on the `main` branch. Use the `touch` command to create `README.md` inside your repository. This is a file you will see in many repos to describe what the repo is for.
 
@@ -113,9 +113,9 @@ Now you are on the `main` branch. Use the `touch` command to create `README.md` 
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 100. Add Readme Text
+## 10. Add Readme Text
 
-### 100.1
+### 10.1
 
 Add the text `SQL Reference` at the top of your new file to let people know what your repo is for.
 
@@ -123,9 +123,9 @@ Add the text `SQL Reference` at the top of your new file to let people know what
 
 - Add the suggested text in your `README.md` file
 
-## 110. git status
+## 11. git status
 
-### 110.1
+### 11.1
 
 Check the status of your repo again.
 
@@ -136,9 +136,9 @@ Check the status of your repo again.
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 120. git add README.md
+## 12. git add README.md
 
-### 120.1
+### 12.1
 
 The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.
 
@@ -149,9 +149,9 @@ The file you created has not been added to git yet so it is showing that it is u
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 130. git status
+## 13. git status
 
-### 130.1
+### 13.1
 
 Check your status again.
 
@@ -162,9 +162,9 @@ Check your status again.
 - Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
-## 140. touch sql_reference.json
+## 14. touch sql_reference.json
 
-### 140.1
+### 14.1
 
 Now your file is in staging and will be added with the next commit. You aren't quite ready to commit this yet though. Use `touch` again to create `sql_reference.json` in your repo.
 
