@@ -3,8 +3,8 @@
 ```sh
 mkdir number_guessing_game; cd number_guessing_game
 touch number_guess.sh; chmod +x number_guess.sh
-echo "#!/bin/bash" >> number_guess.sh
 git init; git checkout -b main
+git add . ; git commit -m "Initial commit"
 ```
 
 ## Create the database
@@ -24,7 +24,6 @@ My git commits:
 ```git
 db9a60d (HEAD -> main) fix: don't print the answer
 981ed2d feat: complete project
-3658405 (master) feat: finish game, still not working with db
 b8431fd feat: program asks until number is guessed
 0caed79 fix: random number between 1 and 1000
 5242a1d feat: asks for username and search in db
